@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronómetro y Temporizador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="grid">
+    <section class="card">
+      <h2>Cronómetro</h2>
+      <div id="cronodisplay" class="time">00:00.0</div>
+      <div class="row">
+        <button id="start">Iniciar</button>
+        <button id="stop">Detener</button>
+        <button id="reset">Reiniciar</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Temporizador</h2>
+      <label>Minutos: <input id="mins" type="number" min="0" value="0"></label>
+      <label>Segundos: <input id="secs" type="number" min="0" max="59" value="10"></label>
+      <div id="timerdisplay" class="time">00:10</div>
+      <div class="row">
+        <button id="tstart">Comenzar</button>
+        <button id="tstop">Pausar</button>
+        <button id="treset">Reiniciar</button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
